@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Josefin Sans";
+  src: url(/public/JosefinSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Martel";
+  src: url(/public/Martel-Regular.ttf);
+}
+@font-face {
+  font-family: "Yantramanav";
+  src: url(/public/Yantramanav-Regular.ttf);
+}
+h1 {
+  font-family: "Josefin Sans";
+}
+h2 {
+  font-family: "Martel";
+}
+p {
+  font-family: "Yantramanav";
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(246, 245, 234, 1);
+}

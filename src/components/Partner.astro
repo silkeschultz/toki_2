@@ -1,0 +1,50 @@
+<div class="partner-strip">
+  <div class="partner-strip__inner">
+    <!-- samme tekst to gange, MASSE gentagelser -->
+    <span> PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • </span>
+    <span> PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • PARTNER • </span>
+  </div>
+</div>
+<style>
+  <style > body {
+    margin: 0;
+    background: #8b8c5b;
+    font-family: "Times New Roman", serif;
+  }
+
+  /* bare en placeholder for dit logo-område */
+  .footer-logo {
+    height: 200px;
+    background: #8b8c5b;
+  }
+
+  /* SELVE BÅNDET */
+  .partner-strip {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .partner-strip__inner {
+    display: flex; /* læg spans ved siden af hinanden */
+    white-space: nowrap;
+    animation: partner-marquee 5s linear infinite;
+  }
+
+  .partner-strip__inner span {
+    padding: 24px 2rem; /* højde + lidt luft vandret */
+    font-size: 64px;
+    color: #040404;
+    white-space: nowrap;
+    font-family: "JosefinSans";
+  }
+
+  @keyframes partner-marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      /* flyt én “halv længde”, fordi vi har 2 spans med samme tekst */
+      transform: translateX(-50%);
+    }
+  }
+</style>

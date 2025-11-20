@@ -1,0 +1,113 @@
+<section class="flowlinje">
+  <!-- nedenunder er det der skal være i venstre side -->
+  <div class="leftcontent">
+    <h1>TÓKI FLOW</h1>
+    <div class="step-box" style="--flow-pos: 220px;">
+      <h2>STEP TWO –</h2>
+      <p>To translate insights into a clear design foundation.</p>
+    </div>
+
+    <div class="step-box" style="--flow-pos: 500px;">
+      <h2>STEP FOUR –</h2>
+      <p>To refine the chosen packaging concept and prepare it for production, communication, and scaling.</p>
+    </div>
+  </div>
+  <!-- nedenunder det der skal være i højre side -->
+  <div class="right-content">
+    <div class="step-box" style="--flow-pos: 80px;">
+      <h2>STEP ONE –</h2>
+      <p>To create a shared foundation — where we understand the journey of your packaging and how it can generate more value for the business, the brand, and the planet.</p>
+    </div>
+
+    <div class="step-box" style="--flow-pos: 300px;">
+      <h2>STEP THREE –</h2>
+      <p>To transform the design principles into visual and structural concepts that demonstrate how the packaging can look, feel, and function in practice.</p>
+    </div>
+
+    <div class="step-box" style="--flow-pos: 500px;">
+      <h2>STEP FIVE –</h2>
+      <p>To implement the final solution in a scalable setup — through the right partners, processes, and material flows.</p>
+    </div>
+  </div>
+</section>
+<div class="bottom-quote">
+  <p>"Great packaging doesn't happen by accident. It happends by design - and by flow"</p>
+  <a href="/flow"><button>READ MORE</button></a>
+</div>
+
+<style>
+  <style > .flowlinje h1 {
+    padding: 20px;
+    font-family: JosefinSans;
+    font-weight: bold;
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  .flowlinje p {
+    font-size: 20px;
+  }
+  .flowlinje img {
+    display: flex;
+    width: 65%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 250px;
+  }
+  .flowlinje {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    min-height: 1500px;
+    overflow: visible;
+    background-image: url("/flowlinje.svg");
+    background-size: auto 90%;
+    background-position: center 100px;
+    background-repeat: no-repeat;
+  }
+  /* Højre opg venstre side */
+  .left-content,
+  .right-content {
+    padding: 40px;
+  }
+  .left-content .step-box {
+    margin-left: 80px;
+  }
+  .right-content .step-box {
+    margin-left: 300px;
+    padding: 0px;
+  }
+  /* Til de forskellige steps */
+  .step-box {
+    width: 60%;
+    max-width: 400px;
+    padding: 40px;
+    position: relative;
+    top: var(--flow-pos);
+    font-family: Martel;
+    z-index: 1;
+  }
+  /* quotet under */
+  .bottom-quote {
+    text-align: center;
+  }
+  .bottom-quote p {
+    font-size: 20px;
+    font-family: "Yantramanav";
+    font-style: italic;
+  }
+  button {
+    font-family: "JosefinSans";
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #8c8c5d;
+  }
+  button:hover {
+    box-shadow: #8c8c5d 0px 0px 10px 2px;
+    cursor: pointer;
+  }
+</style>

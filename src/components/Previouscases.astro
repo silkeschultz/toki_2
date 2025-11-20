@@ -1,0 +1,32 @@
+<h1>PREVIOUS CASES</h1>
+<section class="casesforside">
+  <a href="/cases"><img src="/case1forside.svg" alt="CASE 1" style="width: 100%; display: block;" /></a>
+  <a href="/cases"><img src="/case1forside.svg" alt="CASE 1" style="width: 100%; display: block;" /></a>
+  <a href="/cases"><img src="/case1forside.svg" alt="CASE 1" style="width: 100%; display: block;" /></a>
+  <img class="case-4" src="/case4forside.svg" alt="CASE 4" style="width: 100%; display: block;" />
+  <img src="/case2forside.svg" alt="CASE 2" style="width: 100%; display: block;" />
+  <img src="/case3forside.svg" alt="CASE 3" style="width: 100%; display: block;" />
+</section>
+
+<style>
+  * {
+    font-family: JosefinSans;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  h1 {
+    margin: 2rem;
+  }
+  .casesforside {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  .case-4 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+  }
+</style>
