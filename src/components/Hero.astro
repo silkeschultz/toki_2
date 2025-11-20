@@ -1,0 +1,51 @@
+<section class="hero">
+  <img src="/public/hero.svg" alt="Hero section" />
+  <div class="hero-text">
+    <h1>THE QUIET HERO BEHIND EVERY<br />GREAT PRODUCT</h1>
+  </div>
+</section>
+
+<style>
+  .hero {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    overflow: hidden;
+    z-index: -1; /* Bag alt andet */
+  }
+
+  .hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding-bottom: 40px;
+    }
+
+    .hero h1 {
+      font-size: 28px;
+    }
+  }
+</style>

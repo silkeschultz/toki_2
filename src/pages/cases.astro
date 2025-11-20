@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+const endpoint = "https://yvsqeurljhxwfykzgfyb.supabase.co/rest/v1/Toki?select=*";
+const key = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl2c3FldXJsamh4d2Z5a3pnZnliIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI5Nzc0ODMsImV4cCI6MjA3ODU1MzQ4M30.tQHxzSel-Iqvcvuh9XBVKsvHr-oNSd8XLUyhsGABUGo`;
+
+const options = {
+  method: "GET",
+  headers: {
+    apikey: key,
+  },
+};
+
+const data = await fetch(endpoint, options).then((res) => res.json());
+console.log(data);
+---
+
+<Layout>
+  <section>
+    <h1>Previous Cases</h1>
+    <section class="case-grid">
+      {data.map((caseItem) => <Card data={caseItem} />)}
+    </section>
+  </section>
+</Layout>
+
+<style>
+  section {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 4rem 0;
+  }
+  .case-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+</style>

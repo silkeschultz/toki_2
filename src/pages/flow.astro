@@ -1,0 +1,153 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <section class="toki-flow">
+    <div class="intro">
+      <h1>TOKI FLOW</h1>
+      <p>
+        TOKI Flow <strong>transforms insights into solutions</strong> that create value for brand, customer, and planet. Our <strong>five paths</strong> guide a journey from understanding to change—each can stand alone, or we can navigate them together
+        as a partnership. We don't just deliver a task; we create movement, clarity, and tangible results.
+      </p>
+
+      <img src="public/toki_flow.png" alt="logo" class="intro-img" />
+    </div>
+
+    <div class="fase1">
+      <div class="tekst1">
+        <h2>FASE 1</h2>
+        <h3>Understanding Your Reality</h3>
+        <p><strong>Goal:</strong> Map your packaging journey to uncover value for business, brand, and sustainability.</p>
+        <p><strong>How:</strong> Analyze current setup, identify opportunities, and align on next steps.</p>
+        <p><strong>Investment:</strong> 25,000 - 30,000 DKK.</p>
+      </div>
+
+      <img src="public/fase1.png" alt="fase1" class="fase-icon" />
+    </div>
+
+    <div class="fase2">
+      <div class="tekst2">
+        <h2>FASE 2</h2>
+        <h3>Shape Your Design DNA</h3>
+        <p><strong>Goal:</strong> Define visual and structural principles for cohesive, brand-aligned packaging.</p>
+        <p><strong>How:</strong> Workshop to create design guidelines and a "Packaging DNA Compass."</p>
+        <p><strong>Investment:</strong> 25,000 - 30,000 DKK.</p>
+      </div>
+
+      <img src="public/fase2.png" alt="fase2" class="fase-icon" />
+    </div>
+
+    <div class="fase3">
+      <div class="tekst3">
+        <h2>FASE 3</h2>
+        <h3>Make Ideas Tangible</h3>
+        <p><strong>Goal:</strong> Turn principles into testable concepts-visual, functional, and commercial.</p>
+        <p><strong>How:</strong> Develop 2 - 3 prototypes, visualize in context, and select the best direction.</p>
+        <p><strong>Investment:</strong> 35,000 - 40,000 DKK.</p>
+      </div>
+      <img src="public/fase3.png" alt="fase3" class="fase-icon" />
+    </div>
+
+    <div class="fase4">
+      <div class="tekst4">
+        <h2>FASE 4</h2>
+        <h3>Prepare for the World</h3>
+        <p><strong>Goal:</strong> Refine the chosen concept for production-ready to perform in real life.</p>
+        <p><strong>How:</strong> Prototype, test, adjust, and align design, tech, and supply chain.</p>
+        <p><strong>Investment:</strong> 40,000 - 45,000 DKK.</p>
+      </div>
+      <img src="public/fase4.png" alt="fase4" class="fase-icon" />
+    </div>
+
+    <div class="fase5">
+      <div class="tekst5">
+        <h2>FASE 5</h2>
+        <h3>Scale Together</h3>
+        <p><strong>Goal:</strong> Build a scalable system with the right partners for global, sustainable impact.</p>
+        <p><strong>How:</strong> Match suppliers, set up collaboration, and optimize continuously.</p>
+        <p><strong>Investment:</strong> From 18,000 DKK (advisory) to 60,000+ DKK (full scaling).</p>
+      </div>
+
+      <img src="public/fase5.png" alt="fase5" class="fase-icon" />
+    </div>
+
+    <p><class="footer-text">From insight to impact, we balance strategy, storytelling, and sustainability to deliver packaging that truly matters.</class="footer-text"></p>
+    <Layout />
+
+    <style>
+      .toki-flow {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 0;
+        line-height: 1.5;
+        background-color: #bac8d9;
+      }
+
+      .intro {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        margin-bottom: 60px;
+      }
+
+      .intro-img {
+        width: 70%;
+        height: auto;
+        grid-column: 3;
+      }
+      /* 
+  .tekst1 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  } */
+
+      .fase {
+        border-top: 3px solid #0d0c0c;
+        padding: 40px 0;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        /* gap: 20px; */
+      }
+
+      .fase2,
+      .fase4 {
+        border-bottom: 3px solid #0d0c0c;
+        padding: 40px 0;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        /* gap: 20px; */
+      }
+      .tekst2,
+      .tekst4 {
+        display: grid;
+        grid-column: auto;
+      }
+      .tekst1,
+      .tekst3,
+      .tekst5 {
+        display: grid;
+        grid-auto-columns: auto;
+      }
+
+      .fase-icon {
+        width: 100px;
+        height: auto;
+        justify-self: end;
+      }
+
+      .fase h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+
+      .fase h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        text-decoration: underline;
+        font-weight: 600;
+      }
+    </style>
+  </section></Layout
+>

@@ -1,0 +1,27 @@
+---
+const { data } = Astro.props;
+---
+
+<a href=`/single/${data.id}`>
+  <section>
+    <img src=`https://yvsqeurljhxwfykzgfyb.supabase.co/storage/v1/object/public/Toki_images/${data.image}` alt="case image" />
+    <h2>{data.casename}</h2>
+  </section>
+</a>
+
+<style>
+  img {
+    width: 100%;
+    height: auto;
+  }
+  section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    background-color: rgba(246, 245, 234, 1);
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
